@@ -6,8 +6,10 @@
 //  Copyright © 2019 Nomizo. All rights reserved.
 //
 
-class TaskStore {
-    var tasks = [
+import Combine
+
+class TaskStore: ObservableObject {
+  @Published  var tasks = [
         "Read Bible",
          "Pray",
          "Code" ,
